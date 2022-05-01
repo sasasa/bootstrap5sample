@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>入力グループ</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center my-5">コンポーネント：入力グループ</h1>
+<h2 class="text-center my-5">入力グループのサイズ調整</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <!-- 小サイズの入力グループ -->
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+      </div>
+      <!-- 標準サイズの入力グループ -->
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      </div>
+      <!-- 大サイズの入力グループ -->
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+        <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

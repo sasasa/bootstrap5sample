@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>カード</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：カード</h1>
+<h2 class="text-center">カードのスタイルを変更する</h2>
+<div class="container">
+  <h3 class="mb-4">カードのボーダー色を変更する</h3>
+  <!-- カード枠のボーダー色：変更なし -->
+  <div class="card mb-3" style="max-width: 25rem;">
+    <!-- ヘッダーのボーダー色：変更なし -->
+    <div class="card-header">カードのヘッダー</div>
+    <div class="card-body">
+      <h4 class="card-title">カードの見出し</h4>
+      <p class="card-text">カードの内容文が入ります。</p>
+    </div>
+  </div>
+  <!-- カード枠のボーダー色：青 border-primary -->
+  <div class="card border-primary mb-3" style="max-width: 25rem;">
+    <!-- ヘッダーのボーダー色：青 border-primary -->
+    <div class="card-header border-primary">カードのヘッダー</div>
+    <div class="card-body">
+      <h4 class="card-title">カードの見出し</h4>
+      <p class="card-text">カードの内容文が入ります。</p>
+    </div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

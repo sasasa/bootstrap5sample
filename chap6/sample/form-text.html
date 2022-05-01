@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>フォーム</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：フォーム</h1>
+<h2 class="text-center">ヘルプテキストを表示する</h2>
+<div class="container">
+  <form>
+    <label class="form-label" for="inputPassword">パスワード</label>
+    <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
+    <small id="passwordHelpBlock" class="form-text text-muted">パスワードは8〜20文字で、文字と数字を含み、スペース、特殊文字、または絵文字を含むことはできません。</small>
+  </form>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>フォーム</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：フォーム</h1>
+<h2 class="text-center mb-4">コンパクトなカラム間隔のフォーム</h2>
+<div class="container">
+  <form>
+    <div class="row g-1">
+      <div class="mb-3 col-md-6">
+        <label class="form-label" for="inputEmail">メールアドレス</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="メールアドレスを入力"> </div>
+      <div class="mb-3 col-md-6">
+        <label class="form-label" for="inputPassword">パスワード</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="パスワードを入力"> </div>
+    </div>
+    <div class="row g-1">
+      <div class="mb-3 col-md-4">
+        <label class="form-label" for="inputState">国</label>
+        <select id="inputState" class="form-control">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="mb-3 col-md-2">
+        <label class="form-label" for="inputZip">郵便番号</label>
+        <input type="text" class="form-control" id="inputZip"> </div>
+      <div class="mb-3 col-md-6">
+        <label class="form-label" for="inputCity">都道府県</label>
+        <input type="text" class="form-control" id="inputCity"> </div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="inputAddress1">住所1</label>
+      <input type="text" class="form-control" id="inputAddress1" placeholder="市町村"> </div>
+    <div class="mb-3">
+      <label class="form-label" for="inputAddress2">住所2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="マンション名"> </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check">
+        <label class="form-check-label" for="check">チェックする</label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">サインイン</button>
+  </form>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

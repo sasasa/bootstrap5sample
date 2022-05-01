@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>フォーム</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：フォーム</h1>
+<h2 class="text-center">Bootstrap のフォームの入力検証機能を使用する</h2>
+<div class="container">
+  <form class="needs-validation" novalidate>
+    <div class="row g-2">
+      <div class="col-md-6 mb-3">
+        <label for="validation01">姓</label>
+        <input type="text" class="form-control" id="validation01" placeholder="First name" value="山田" required>
+        <div class="valid-feedback">
+          入力済！
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validation02">名</label>
+        <input type="text" class="form-control" id="validation02" placeholder="Last name" value="太郎" required>
+        <div class="valid-feedback">
+          入力済！
+        </div>
+      </div>
+    </div>
+    <div class="row g-2">
+      <div class="col-md-6 mb-3">
+        <label for="validation03">市町村</label>
+        <input type="text" class="form-control" id="validation03" placeholder="市町村名を入力" required>
+        <div class="invalid-feedback">
+          市町村名を入力してください
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validation04">都道府県</label>
+        <input type="text" class="form-control" id="validation04" placeholder="都道府県名を入力" required>
+        <div class="invalid-feedback">
+          都道府県名を入力してください
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validation05">郵便番号</label>
+        <input type="text" class="form-control" id="validation05" placeholder="郵便番号を入力" required>
+        <div class="invalid-feedback">
+          郵便番号を入力してください
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">送信する</button>
+  </form>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- 無効な入力がある場合にフォームの送信を無効にする -->
+<script>
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Bootstrapのフォームの入力検証スタイルを適用するフォームを取得
+      let forms = document.getElementsByClassName('needs-validation');
+      // ループして帰順を防ぐ
+      let validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          // バリデートが通らない場合、イベントをキャンセルして、was-validatedクラスを追加
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>
+</body>
+</html>

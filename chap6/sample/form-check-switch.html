@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>フォーム</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：フォーム</h1>
+<h2 class="text-center mb-4">スイッチ状のチェックボックス</h2>
+<div class="container">
+  <form>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" value="" id="check1">
+      <label class="form-check-label" for="check1">
+        チェック1（デフォルト・チェックなし）
+      </label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" value="" id="check2" checked>
+      <label class="form-check-label" for="check2">
+        チェック2（チェックあり）
+      </label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" value="" id="check3">
+      <label class="form-check-label" for="check3">
+        チェック3（不確定）
+      </label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" value="" id="check4" disabled>
+      <label class="form-check-label" for="check4">
+        チェック4（無効・チェックなし）
+      </label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" value="" id="check5" checked disabled>
+      <label class="form-check-label" for="check4">
+        チェック5（無効・チェックあり）
+      </label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" value="" id="check6" disabled>
+      <label class="form-check-label" for="check3">
+        チェック6（無効・不確定）
+      </label>
+    </div>
+  </form>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  document.querySelector('#check3').indeterminate = true;
+  document.querySelector('#check6').indeterminate = true;
+</script>
+</body>
+</html>

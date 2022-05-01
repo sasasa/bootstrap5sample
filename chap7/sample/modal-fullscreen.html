@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>JavaScriptを利用したコンポーネント：モーダル</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">JavaScriptを利用したコンポーネント：モーダル</h1>
+<h2 class="text-center">フルスクリーンのモーダル</h2>
+<div class="container"> 
+  <!-- 常時フルスクリーンのモーダル -->
+  <h3>常時フルスクリーンのモーダル</h3>
+  <!-- 切り替えボタン -->
+  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#alwaysModal">切り替えボタン（常時）</button>
+  <!-- モーダル -->
+  <div class="modal fade" id="alwaysModal" tabindex="-1" role="dialog" aria-labelledby="alwaysModalLabel" aria-hidden="true">
+    <!-- モーダルのダイアログ本体 -->
+    <div class="modal-dialog modal-fullscreen" role="document">
+      <!-- モーダルのコンテンツ部分 -->
+      <div class="modal-content"> 
+        <!-- モーダルのヘッダー -->
+        <div class="modal-header"> 
+          <!-- モーダルのタイトル -->
+          <h5 class="modal-title" id="alwaysModalLabel">モーダルのタイトル</h5>
+          <!-- 閉じるアイコン -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- モーダルの本文 -->
+        <div class="modal-body">モーダルの本文が入ります。</div>
+        <!-- モーダルのフッター -->
+        <div class="modal-footer"> 
+          <!-- 閉じるボタン -->
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / フルスクリーンのモーダル --> 
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

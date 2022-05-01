@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>JavaScriptを利用したコンポーネント：モーダル</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">JavaScriptを利用したコンポーネント：モーダル</h1>
+<h2 class="text-center">サイズのオプション</h2>
+<div class="container"> 
+  <!-- 小さなサイズのモーダル -->
+  <h3>小さなサイズのモーダル</h3>
+  <!-- 切り替えボタン -->
+  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#smallModal">切り替えボタン（modal-sm）</button>
+  <!-- モーダル -->
+  <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="smallModalLabel" aria-hidden="true">
+    <!-- モーダルのダイアログ本体 -->
+    <div class="modal-dialog modal-sm" role="document">
+      <!-- モーダルのコンテンツ部分 -->
+      <div class="modal-content"> 
+        <!-- モーダルのヘッダー -->
+        <div class="modal-header"> 
+          <!-- モーダルのタイトル -->
+          <h5 class="modal-title" id="smallModalLabel">モーダルのタイトル</h5>
+          <!-- 閉じるアイコン -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- モーダルの本文 -->
+        <div class="modal-body">モーダルの本文が入ります。</div>
+        <!-- モーダルのフッター -->
+        <div class="modal-footer"> 
+          <!-- 閉じるボタン -->
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / 小さなサイズのモーダル --> 
+  <!-- 標準サイズのモーダル -->
+  <h3 class="mt-5">標準サイズのモーダル</h3>
+  <!-- 切り替えボタン -->
+  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#defaultModal">切り替えボタン（デフォルト）</button>
+  <!-- モーダル -->
+  <div class="modal fade" id="defaultModal" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+    <!-- モーダルのダイアログ本体 -->
+    <div class="modal-dialog" role="document">
+      <!-- モーダルのコンテンツ部分 -->
+      <div class="modal-content"> 
+        <!-- モーダルのヘッダー -->
+        <div class="modal-header"> 
+          <!-- モーダルのタイトル -->
+          <h5 class="modal-title" id="defaultModalLabel">モーダルのタイトル</h5>
+          <!-- 閉じるアイコン -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- モーダルの本文 -->
+        <div class="modal-body">モーダルの本文が入ります。</div>
+        <!-- モーダルのフッター -->
+        <div class="modal-footer"> 
+          <!-- 閉じるボタン -->
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / 標準サイズのモーダル --> 
+  <!-- 大きなサイズのモーダル -->
+  <h3 class="mt-5">大きなサイズのモーダル</h3>
+  <!-- 切り替えボタン -->
+  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#largeModal">切り替えボタン（modal-lg）</button>
+  <!-- モーダル -->
+  <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+    <!-- モーダルのダイアログ本体 -->
+    <div class="modal-dialog modal-lg" role="document">
+      <!-- モーダルのコンテンツ部分 -->
+      <div class="modal-content">
+        <!-- モーダルのヘッダー -->
+        <div class="modal-header">
+          <!-- モーダルのタイトル -->
+          <h5 class="modal-title" id="largeModalLabel">モーダルのタイトル</h5>
+          <!-- 閉じるアイコン -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <!-- モーダルの本文 -->
+        <div class="modal-body">モーダルの本文が入ります。</div>
+        <!-- モーダルのフッター -->
+        <div class="modal-footer">
+          <!-- 閉じるボタン -->
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / 大きなサイズのモーダル --> 
+  <!-- とても大きなサイズのモーダル -->
+  <h3 class="mt-5">とても大きなサイズのモーダル</h3>
+  <!-- 切り替えボタン -->
+  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#extraLargeModal">切り替えボタン（modal-xl）</button>
+  <!-- モーダル -->
+  <div class="modal fade" id="extraLargeModal" tabindex="-1" role="dialog" aria-labelledby="extraLargeModalLabel" aria-hidden="true">
+    <!-- モーダルのダイアログ本体 -->
+    <div class="modal-dialog modal-xl" role="document">
+      <!-- モーダルのコンテンツ部分 -->
+      <div class="modal-content">
+        <!-- モーダルのヘッダー -->
+        <div class="modal-header">
+          <!-- モーダルのタイトル -->
+          <h5 class="modal-title" id="extraLargeModalLabel">モーダルのタイトル</h5>
+          <!-- 閉じるアイコン -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <!-- モーダルの本文 -->
+        <div class="modal-body">モーダルの本文が入ります。</div>
+        <!-- モーダルのフッター -->
+        <div class="modal-footer">
+          <!-- 閉じるボタン -->
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / とても大きなサイズのモーダル --> 
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

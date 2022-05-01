@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ドロップダウン</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">フォームとボタンのコンポーネント：ドロップダウン</h1>
+<h2 class="text-center mb-4">ドロップダウンメニューに様々な要素を追加する</h2>
+<div class="container">
+  <!-- ボタングループ -->
+  <div class="btn-group">
+    <!-- 切り替えボタン -->
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ドロップダウン</button>
+    <!-- ドロップダウンメニュー -->
+    <div class="dropdown-menu">
+      <h6 class="dropdown-header">ドロップダウンメニューの見出し</h6>
+      <form class="px-4 py-3">
+        <div class="mb-3">
+          <label class="form-label" for="email">メールアドレス</label>
+          <input type="email" class="form-control" id="email" placeholder="email@example.com"> </div>
+        <div class="mb-3">
+          <label class="form-label" for="password">パスワード</label>
+          <input type="password" class="form-control" id="password" placeholder="Password"> </div>
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="check">
+          <label class="form-check-label" for="check"> ログイン情報を記憶 </label>
+        </div>
+        <button type="submit" class="btn btn-secondary">ログイン</button>
+      </form>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">初めての方</a>
+      <a class="dropdown-item" href="#">パスワードをお忘れの方</a>
+    </div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

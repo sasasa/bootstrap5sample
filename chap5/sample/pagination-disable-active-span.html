@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ページネーション</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+</style>
+</head>
+<body>
+<div class="container my-5">
+  <h1 class="text-center my-5">コンポーネント：ページネーション</h1>
+  <h2 class="text-center my-5">span要素でリンクの無効状態やアクティブ状態を指定する</h2>
+  <nav aria-label="ページネーションの例">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <span class="page-link">前</span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active">
+        <span class="page-link">
+          2
+          <span class="visually-hidden">(現ページ)</span>
+        </span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">次</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

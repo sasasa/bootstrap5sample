@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>JavaScriptを利用したコンポーネント：ツールチップ</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+  <h1 class="text-center mb-5">JavaScriptを利用したコンポーネント：ツールチップ</h1>
+  <h2 class="text-center mb-5">ツールチップの基本的な使用例</h2>
+  <div class="container text-center">
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="ツールチップを上に">
+      ツールチップを上に
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="ツールチップを右に">
+      ツールチップを右に
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="ツールチップを下に">
+      ツールチップを下に
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="ツールチップを左に">
+      ツールチップを左に
+    </button>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    let tooltipList = tooltipTriggerList.map(function (tooltipTriggerElem) {
+      return new bootstrap.Tooltip(tooltipTriggerElem)
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ボタングループ</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：ボタングループ</h1>
+<h2 class="text-center mb-4">チェックボックスとラジオボタンを組み込む</h2>
+<div class="container">
+  <div class="btn-group my-3" role="group" aria-label="チェックボックスを組み込む">
+    <input type="checkbox" class="btn-check" id="checkbox1" autocomplete="off">
+    <label class="btn btn-outline-primary" for="checkbox1">チェックボックス1</label>
+    <input type="checkbox" class="btn-check" id="checkbox2" autocomplete="off">
+    <label class="btn btn-outline-primary" for="checkbox2">チェックボックス2</label>
+    <input type="checkbox" class="btn-check" id="checkbox3" autocomplete="off">
+    <label class="btn btn-outline-primary" for="checkbox3">チェックボックス3</label>
+  </div>
+  <div class="btn-group" role="group" aria-label="ラジオボタンを組み込む">
+    <input type="radio" class="btn-check" name="radio" id="radio1" autocomplete="off" checked>
+    <label class="btn btn-outline-primary" for="radio1">ラジオボタン1</label>
+    <input type="radio" class="btn-check" name="radio" id="radio2" autocomplete="off">
+    <label class="btn btn-outline-primary" for="radio2">ラジオボタン2</label>
+    <input type="radio" class="btn-check" name="radio" id="radio3" autocomplete="off">
+    <label class="btn btn-outline-primary" for="radio3">ラジオボタン3</label>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

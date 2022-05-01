@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>フォーム</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：フォーム</h1>
+<h2 class="text-center mb-4">ラベルサイズを調整する</h2>
+<div class="container">
+  <form>
+    <div class="mb-3 row">
+      <!-- 小サイズのラベル -->
+      <label for="labelSm" class="form-label col-sm-3 col-form-label col-form-label-sm">小サイズ：col-form-label-sm</label>
+      <div class="col-sm-9">
+        <input type="email" class="form-control form-control-sm" id="labelSm" placeholder="form-control-sm"> </div>
+    </div>
+    <div class="mb-3 row">
+      <!-- 標準サイズのラベル -->
+      <label for="labelDefault" class="form-label col-sm-3 col-form-label">標準サイズ</label>
+      <div class="col-sm-9">
+        <input type="email" class="form-control" id="labelDefault" placeholder="Default size"> </div>
+    </div>
+    <div class="mb-3 row">
+      <!-- 大サイズのラベル -->
+      <label for="labelLg" class="form-label col-sm-3 col-form-label col-form-label-lg">大サイズ：col-form-label-lg</label>
+      <div class="col-sm-9">
+        <input type="email" class="form-control form-control-lg" id="labelLg" placeholder="form-control-lg"> </div>
+    </div>
+  </form>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ユーティリティ</title>
+<style>
+/* 本文に関連のないスタイル */
+.d-flex {
+  background-color: rgba(255,0,0,.1);
+  margin-bottom: 2rem;
+}
+.d-flex > div {
+  background-color: #eee;
+  padding: .5em;
+  border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<h1 class="my-5 text-center">Flexユーティリティ</h1>
+<h2 class="my-5 text-center">flexアイテムの伸縮を指定するクラス</h2>
+<div class="container">
+  <h3>デフォルト</h3>
+  <div class="d-flex" style="height: 100px">
+    <div class="p-2">flexアイテム01</div>
+    <div class="p-2">flexアイテム02</div>
+    <div class="p-2">flexアイテム03</div>
+  </div>
+  <!-- flexアイテムの幅を伸長する -->
+  <h3>flex-grow</h3>
+  <div class="d-flex" style="height: 100px">
+    <div class="p-2 flex-grow-1">flexアイテム01（flex-grow-1）</div>
+    <div class="p-2">flexアイテム02</div>
+    <div class="p-2">flexアイテム03</div>
+  </div>
+  <!-- flexアイテムの幅を縮小する -->
+  <h3>flex-shrink</h3>
+  <div class="d-flex" style="height: 100px">
+    <div class="p-2 flex-shrink-1">flexアイテム01（flex-shrink-1）</div>
+    <div class="p-2 w-100">flexアイテム02</div>
+    <div class="p-2 w-100">flexアイテム03</div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

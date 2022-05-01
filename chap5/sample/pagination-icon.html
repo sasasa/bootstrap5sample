@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ページネーション</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<div class="container my-5">
+  <h1 class="text-center my-5">コンポーネント：ページネーション</h1>
+  <h2 class="text-center my-5">ページネーションにアイコンを使用する</h2>
+  <nav aria-label="ページネーションの例">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="前へ">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="visually-hidden">前へ</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="次へ">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="visually-hidden">次へ</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ナビゲーションバー</title>
+<style>
+/* 本文に関連のないスタイル */
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center my-5">コンポーネント：ナビゲーションバー</h1>
+<h2 class="text-center my-5">外部コンテンツの表示／非表示</h2>
+<div class="container">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h4 class="text-white">折り畳みコンテンツ</h4>
+      <span class="text-muted">ナビゲーションバーブランド経由で切り替え可</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="ナビゲーション切替">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

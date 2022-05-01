@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>JavaScriptを利用したコンポーネント：トースト</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+  <h1 class="text-center mb-5">JavaScriptを利用したコンポーネント：トースト</h1>
+  <h2 class="text-center mb-3">トーストの基本的な使用例</h2>
+  <div class="container p-5">
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="img/bootstrap-logo.svg" width="32" height="32" class="rounded me-2" alt="...">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        こんにちは！<br />
+        これはトーストからのメッセージです。
+      </div>
+    </div>
+  </div>
+  <div class="container p-5 bg-dark">
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="img/bootstrap-logo.svg" width="32" height="32" class="rounded me-2" alt="...">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        こんにちは！<br />
+        これはトーストからのメッセージです。
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    let toastElemList = [].slice.call(document.querySelectorAll('.toast'));
+    let toastList = toastElemList.map(function (toastElem) {
+      let toast = new bootstrap.Toast(toastElem, {autohide: false});
+      toast.show();
+      return toast;
+    });
+  </script>
+</body>
+</html>

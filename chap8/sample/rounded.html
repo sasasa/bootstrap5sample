@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ユーティリティ</title>
+<style>
+/* 本文に関連のないスタイル */
+#sample {
+  margin: 0 auto;
+  text-align: center;
+}
+span {
+  display: inline-block;
+  margin: 0 10px 20px;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+#circle {
+  width: 100px;
+  height: 100px;
+}
+</style>
+</head>
+<body>
+<h1 class="my-5 text-center">Borderユーティリティ</h1>
+<h2 class="my-5 text-center">角丸を設定するクラス</h2>
+<div id="sample">
+<span class="rounded">rounded</span>
+<span class="rounded-top">rounded-top</span>
+<span class="rounded-end">rounded-end</span>
+<span class="rounded-bottom">rounded-bottom</span>
+<span class="rounded-start">rounded-start</span>
+<span class="rounded-circle">rounded-circle</span>
+<span class="rounded-circle" id="circle">正円</span><!-- 幅と高さを同じ（100px）に設定 -->
+<span class="rounded-pill">rounded-pill</span>
+<span class="rounded-0">rounded-0</span>
+<span class="rounded-1">rounded-1</span>
+<span class="rounded-2">rounded-2</span>
+<span class="rounded-3">rounded-3</span>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

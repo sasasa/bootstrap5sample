@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>JavaScriptを利用したコンポーネント：折り畳み</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+  <h1 class="text-center mb-5">JavaScriptを利用したコンポーネント：折り畳み</h1>
+  <h2 class="text-center">複数の要素の表示と非表示とを切り替える</h2>
+  <div class="container">
+    <p>
+      <!-- ID「content-01」の切替ボタン -->
+      <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#content-01" aria-expanded="false" aria-controls="content-01">ID「content-01」を表示切り替え</button>
+      <!-- ID「content-02」の切替ボタン -->
+      <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#content-02" aria-expanded="false" aria-controls="content-02">ID「content-02」を表示切り替え</button>
+      <!-- クラス「contents」の切替ボタン -->
+      <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target=".contents" aria-expanded="false" aria-controls="contents-01 contents-02">クラス「contents」を同時に表示切り替え</button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <!-- ID「content-01」、クラス「contents」 -->
+        <div class="collapse contents" id="content-01">
+          <div class="card card-body">
+            ID「content-01」、クラス「contents」
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <!-- ID「content-02」、クラス「contents」 -->
+        <div class="collapse contents" id="content-02">
+          <div class="card card-body">
+            ID「content-02」、クラス「contents」
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

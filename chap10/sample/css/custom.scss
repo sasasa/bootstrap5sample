@@ -1,0 +1,19 @@
+// 変数の上書き
+$enable-gradients:  true;
+
+// BootstrapのSassファイルをインポート
+@import "../scss/bootstrap";
+
+// 角丸クラスを定義
+.rounded-tl {
+  @include border-tl-radius(10px);
+}
+.rounded-tr {
+  @include border-tr-radius(10px);
+}
+.rounded-bl {
+  @include border-bl-radius(10px);
+}
+.rounded-br {
+  @include border-br-radius(10px);
+}

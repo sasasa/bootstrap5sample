@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>タイポグラフィ</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">基本的なスタイリング：タイポグラフィ</h1>
+<h2 class="h4 text-center mb-5">リスト</h2>
+<div class="container py-4">
+  <h3 class="mb-4">定義リスト</h3>
+  <dl class="row">
+    <dt class="col-sm-3">用語1</dt>
+    <dd class="col-sm-9">用語1の説明。</dd>
+    <dt class="col-sm-3 text-truncate">用語2の長いテキストは切り捨てて省略</dt>
+    <dd class="col-sm-9">用語2の説明。</dd>
+    <dt class="col-sm-3">用語3</dt>
+    <dd class="col-sm-9">
+      <dl class="row">
+        <dt class="col-sm-4">ネストされた用語4</dt>
+        <dd class="col-sm-8">ネストされた用語4の説明</dd>
+      </dl>
+    </dd>
+  </dl>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

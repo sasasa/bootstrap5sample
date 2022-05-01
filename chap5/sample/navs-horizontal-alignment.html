@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ナビゲーション</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+ul {
+  border: 2px solid #ccc;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center my-5">コンポーネント：ナビゲーション</h1>
+<h2 class="text-center my-3">水平方向の位置合わせ</h2>
+<p class="text-center">（分かりやすくするため枠線を付けています）</p>
+<div class="container">
+  <h3>通常</h3>
+  <ul class="nav">
+    <li class="nav-item"><a class="nav-link active" href="#">アクティブ</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">リンク</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">無効</a></li>
+  </ul>
+</div>
+<div class="container">
+  <h3>中央揃え</h3>
+  <ul class="nav justify-content-center"><!-- 中央揃え -->
+    <li class="nav-item"><a class="nav-link active" href="#">アクティブ</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">リンク</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">無効</a></li>
+  </ul>
+</div>
+<div class="container">
+  <h3>右揃え</h3>
+  <ul class="nav justify-content-end"><!-- 右揃え -->
+    <li class="nav-item"><a class="nav-link active" href="#">アクティブ</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">リンク</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">無効</a></li>
+  </ul>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

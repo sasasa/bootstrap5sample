@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>JavaScriptを利用したコンポーネント：折り畳み</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+  <h1 class="text-center mb-5">JavaScriptを利用したコンポーネント：折り畳み</h1>
+  <h2 class="text-center">アコーディオンを作成する</h2>
+  <div class="container">
+    <h3 class="mb-4">基本的なアコーディオン</h3>
+    <div class="accordion" id="accordion">
+      <!-- アコーディオン01 -->
+      <div class="accordion-item">
+        <!-- アコーディオンヘッダー -->
+        <div class="accordion-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              アコーディオン01の切り替えボタン
+            </button>
+          </h5>
+        </div>
+        <!-- コンテンツ -->
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+          <div class="accordion-body">
+            アコーディオン01のコンテンツ。アコーディオンヘッダー内の切り替えボタンをクリックすると表示・非表示が切り替えられます。また、他のアコーディオンの切り替えボタンをクリックすると非表示になります。
+          </div>
+        </div>
+      </div>
+      <!-- アコーディオン02 -->
+      <div class="accordion-item">
+        <!-- アコーディオンヘッダー -->
+        <div class="accordion-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              アコーディオン02の切り替えボタン
+            </button>
+          </h5>
+        </div>
+        <!-- コンテンツ -->
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+          <div class="accordion-body">
+            アコーディオン02のコンテンツ。アコーディオンヘッダー内の切り替えボタンをクリックすると表示・非表示が切り替えられます。また、他のアコーディオンの切り替えボタンをクリックすると非表示になります。
+          </div>
+        </div>
+      </div>
+      <!-- アコーディオン03 -->
+      <div class="accordion-item">
+        <!-- アコーディオンヘッダー -->
+        <div class="accordion-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          アコーディオン03の切り替えボタン
+        </button>
+          </h5>
+        </div>
+        <!-- コンテンツ -->
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+          <div class="accordion-body">
+            アコーディオン03のコンテンツ。アコーディオンヘッダー内の切り替えボタンをクリックすると表示・非表示が切り替えられます。また、他のアコーディオンの切り替えボタンをクリックすると非表示になります。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

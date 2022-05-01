@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>フォーム</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：フォーム</h1>
+<h2 class="text-center">一連の入力グループをまとめて無効にする</h2>
+<div class="container">
+  <form>
+    <fieldset disabled>
+      <div class="mb-3">
+        <label class="form-label" for="disabledTextInput">無効な入力欄</label>
+        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"> </div>
+      <div class="mb-3">
+        <label class="form-label" for="disabledSelect">無効なプルダウンメニュー</label>
+        <select id="disabledSelect" class="form-control">
+          <option>Disabled select</option>
+        </select>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="disabledCheck" disabled>
+        <label class="form-check-label" for="disabledCheck">無効なチェックボックス</label>
+      </div>
+      <button type="submit" class="btn btn-primary">無効な送信ボタン</button>
+    </fieldset>
+  </form>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

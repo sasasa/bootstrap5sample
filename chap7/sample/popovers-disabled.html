@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>JavaScriptを利用したコンポーネント：ポップオーバー</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+  <h1 class="text-center mb-5">JavaScriptを利用したコンポーネント：ポップオーバー</h1>
+  <h2 class="text-center mb-5">無効な要素のポップオーバー</h2>
+  <div class="container text-center">
+    <span class="d-inline-block" data-bs-toggle="popover" data-bs-content="無効なボタンのポップオーバーです。">
+      <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>
+        無効なボタン
+      </button>
+    </span>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    var popoverList = popoverTriggerList.map(function (popoverTriggerElem) {
+      return new bootstrap.Popover(popoverTriggerElem)
+    });
+    </script>
+</body>
+</html>

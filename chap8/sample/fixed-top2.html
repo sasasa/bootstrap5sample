@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ユーティリティ</title>
+<style>
+/* 本文に関連のないスタイル */
+.box {
+  height: 1000px;
+  background-color: #eee;
+}
+#nav {
+ height: 56px;
+}
+#test {
+  margin-top: -56px; /* 固定した要素の高さ分のネガティブマージンを設定 */
+  padding-top: 56px; /* 打ち消し用の上パディング */
+}
+</style>
+</head>
+<body>
+<h1 class="my-5 text-center">Positionヘルパー</h1>
+<h2 class="my-5 text-center">最上部に固定するクラス（fixed-top）</h2>
+<div class="container">
+  <div class="fixed-top py-3 px-3 bg-dark text-center" id="nav"><a href="#test" class="text-light">#testへ</a></div>
+  <h3 id="test">#test</h3>
+  <div class="box">このボックスには高さ1000pxが設定されています。</div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

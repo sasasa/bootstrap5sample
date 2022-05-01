@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>JavaScriptを利用したコンポーネント：折り畳み</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+  <h1 class="text-center mb-5">JavaScriptを利用したコンポーネント：折り畳み</h1>
+  <h2 class="text-center">基本的な使用例</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 mb-4">
+        <!-- a要素とhref属性による切り替えボタン -->
+        <p>
+          <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent01" role="button" aria-expanded="false" aria-controls="collapseContent01">a要素とhref属性によるボタン</a>
+        </p>
+        <!-- 切り替えるターゲットとなるコンテンツ -->
+        <div class="collapse" id="collapseContent01">
+          <div class="card card-body">
+            a要素の切り替えボタンをクリックすることで表示と非表示とが切り替わるコンテンツ
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 mb-4">
+        <!-- button要素とdata-bs-target属性による切り替えボタン -->
+        <p>
+          <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContent02" aria-expanded="false" aria-controls="collapseContent02"> button要素とdata-bs-target属性によるボタン</button>
+        </p>
+        <!-- 切り替える対象となるコンテンツ -->
+        <div class="collapse" id="collapseContent02">
+          <div class="card card-body">
+            button要素の切り替えボタンをクリックすることで表示と非表示とが切り替わるコンテンツ
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

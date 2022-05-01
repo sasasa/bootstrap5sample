@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>メディアオブジェクト</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">Flexユーティリティ</h1>
+<div class="container">
+  <h2 class="text-center mb-4">Flexユーティリティによるメディアオブジェクトの例</h2>
+  <!-- メディアオブジェクト -->
+  <div class="d-flex"><!-- ←media -->
+    <!-- 画像 -->
+    <div class="flex-shrink-0"><!-- これで画像を囲む -->
+      <img class="mr-3" alt="" src="https://via.placeholder.com/60x60.png&text=img">
+    </div>
+    <!-- メディア本文 -->
+    <div class="flex-grow-1 ms-3"><!-- ←media-body -->
+      <h5>メディアオブジェクト</h5>
+      この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+    </div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

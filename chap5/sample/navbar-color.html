@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ナビゲーションバー</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center my-5">コンポーネント：ナビゲーションバー</h1>
+<h2 class="text-center my-5">配色</h2>
+<div class="container mb-5">
+  <h3>navbar-darkで文字色を明るくし、bg-darkで暗い背景色を設定</h3>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ブランド</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーション切替">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">リンク1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">リンク2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">リンク3</a>
+        </li>
+      </ul>
+      <form class="row gx-2 my-2 my-lg-0">
+        <div class="col-auto">
+          <input class="form-control me-sm-2" type="search" placeholder="検索" aria-label="検索">
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">検索</button>
+        </div>
+      </form>
+    </div>
+    </div>
+  </nav>
+</div>
+<div class="container mb-5">
+  <h3>navbar-darkで文字色を明るくし、bg-primaryで青い背景色を設定</h3>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ブランド</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="ナビゲーション切替">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">リンク1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">リンク2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">リンク3</a>
+          </li>
+        </ul>
+        <form class="row gx-2 my-2 my-lg-0">
+          <div class="col-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="検索" aria-label="検索">
+          </div>
+          <div class="col-auto">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">検索</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="container">
+  <h3>navbar-lightで文字色を暗くし、背景色をCSSで設定</h3>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ブランド</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent3" aria-expanded="false" aria-label="ナビゲーション切替">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent3">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">リンク1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">リンク2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">リンク3</a>
+          </li>
+        </ul>
+        <form class="row gx-2 my-2 my-lg-0">
+          <div class="col-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="検索" aria-label="検索">
+          </div>
+          <div class="col-auto">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">検索</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ドロップダウン</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">フォームとボタンのコンポーネント：ドロップダウン</h1>
+<h2 class="text-center mb-5">ドロップダウンメニューのイベント</h2>
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownExample" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sale!</button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownExample">
+      <li><a class="dropdown-item" href="#">メニュー01</a></li>
+      <li><a class="dropdown-item" href="#">メニュー02</a></li>
+      <li><a class="dropdown-item" href="#">メニュー03</a></li>
+    </ul>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  document.querySelector('.dropdown').addEventListener("show.bs.dropdown", function(event) {
+    alert(event.relatedTarget.innerText + 'なくなり次第終了！');
+  });
+</script>
+</body>
+</html>

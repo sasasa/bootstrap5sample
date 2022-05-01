@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ボタングループ</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：ボタングループ</h1>
+<h2 class="text-center mb-4">垂直方向のボタングループ</h2>
+<div class="container">
+  <div class="btn-group-vertical" role="group" aria-label="ドロップダウンを含むボタングループ">
+    <button type="button" class="btn btn-secondary">上ボタン</button>
+    <button type="button" class="btn btn-secondary">中ボタン</button>
+    <div class="btn-group" role="group">
+      <!-- 切り替えボタン -->
+       <button id="drop1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        ドロップダウン
+      </button>
+      <!-- ドロップダウンメニュー -->
+      <div class="dropdown-menu" aria-labelledby="drop1">
+        <a class="dropdown-item" href="#">リンク1</a>
+        <a class="dropdown-item" href="#">リンク2</a>
+      </div>
+    </div>
+    <button type="button" class="btn btn-secondary">下ボタン</button>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

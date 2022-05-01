@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title></title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：パンくずリスト</h1>
+<h2 class="text-center mb-4">ディバイダーを変更する</h2>
+<div class="container">
+  <nav style="--bs-breadcrumb-divider: '●';" aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb p-3 bg-light rounded-2">
+      <li class="breadcrumb-item"><a href="#">ホーム</a></li>
+      <li class="breadcrumb-item"><a href="#">ライブラリ</a></li>
+      <li class="breadcrumb-item active" aria-current="page">データ</li>
+    </ol>
+  </nav>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

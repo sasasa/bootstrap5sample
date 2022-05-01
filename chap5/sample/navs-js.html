@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ナビゲーションのJavaScript使用例</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">ナビゲーションのJavaScript使用例</h1>
+<h2 class="text-center mb-5">タブ型ナビゲーション（JavaScript経由）</h2>
+  <div class="container">
+  <!-- タブ部分 -->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item"><a class="nav-link active" id="home-tab" href="#home" role="tab" aria-controls="home" aria-selected="true">ホーム</a></li>
+    <li class="nav-item"><a class="nav-link" id="profile-tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">プロフィール</a></li>
+    <li class="nav-item"><a class="nav-link" id="contact-tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">コンタクト</a></li>
+  </ul>
+  <!-- パネル部分 -->
+  <div class="tab-content mt-3" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">ホームのコンテンツが入ります。</div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">プロフィールのコンテンツが入ります。</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">コンタクトのコンテンツが入ります。</div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  document.querySelectorAll('#myTab a').forEach(function(a) {
+    a.onclick = function (e) {
+      e.preventDefault();
+      (new bootstrap.Tab(this)).show();
+    }
+  });
+</script>
+</body>
+</html>

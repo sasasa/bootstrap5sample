@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ドロップダウン</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">フォームとボタンのコンポーネント：ドロップダウン</h1>
+<h2 class="text-center mb-4">ドロップダウンメニューを暗くする</h2>
+<div class="container">
+  <!-- ドロップダウン -->
+  <div class="dropdown">
+    <!-- 切り替えボタン -->
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      ドロップダウン
+    </button>
+    <!-- ドロップダウンメニュー -->
+    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+      <li><a class="dropdown-item" href="#">メニュー01</a></li>
+      <li><a class="dropdown-item active" href="#">メニュー02</a></li>
+      <li><a class="dropdown-item" href="#">メニュー03</a></li>
+    </ul>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>フォーム</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：フォーム</h1>
+<h2 class="text-center mb-4">水平配置のフォームを作成する</h2>
+<div class="container">
+  <form>
+    <div class="mb-3 row">
+      <label for="inputEmail" class="form-label col-sm-2 col-form-label">メールアドレス</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail" placeholder="メールアドレスを入力">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputPassword" class="form-label col-sm-2 col-form-label">パスワード</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword" placeholder="パスワードを入力">
+      </div>
+    </div>
+    <fieldset class="mb-3">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0">ラジオボタン</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radios" id="radios1" value="option1" checked>
+            <label class="form-check-label" for="radios1">
+              オプション1
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radios" id="radios2" value="option2">
+            <label class="form-check-label" for="radios2">
+              オプション2
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radios" id="radios3" value="option3" disabled>
+            <label class="form-check-label" for="radios3">
+              オプション3（無効）
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="mb-3 row">
+      <div class="col-sm-2">チェックボックス</div>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check1">
+          <label class="form-check-label" for="check1">
+            チェックする
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">サインイン</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

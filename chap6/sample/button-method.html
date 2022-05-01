@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ボタン</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：ボタン</h1>
+<h2 class="text-center mb-4">JavaScriptでボタンの動作を指定するメソッド</h2>
+<h3 class="text-center mb-4">Button.toggle()</h3>
+<div class="container text-center">
+  <button type="button" class="btn btn-primary" aria-pressed="true" autocomplete="off" id="toggle-btn">押してね</button>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  document.querySelector('#toggle-btn').onclick = function () {
+    bootstrap.Button.getOrCreateInstance(this).toggle();
+    this.innerHTML = '押したね';
+  };
+</script>
+</body>
+</html>

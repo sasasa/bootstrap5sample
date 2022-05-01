@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>Bootstrapのグリッドシステム</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+h1, h2, h3 {
+  text-align: center;
+}
+h1 {
+  margin-bottom: 3rem;
+}
+h2 {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+.row {
+  margin-bottom: 2rem;
+  background-color: rgba(255,0,0,.1);
+}
+.col, .row > [class^=col-] {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #ccc;
+  border: 1px solid #aaa;
+}
+</style>
+</head>
+<body>
+<h1>Bootstrapのグリッドシステム</h1>
+<h2>カラムの折り返し</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-9">col-9</div>
+    <div class="col-4">col-4<br>
+      9列+4列＝13列。このカラムで12列を超えるため、新しい行に折り返される</div>
+    <div class="col-6">col-6<br>
+      4列+6列＝10列。このカラムは12列以内に収まっているため、新しい行内に継続される</div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

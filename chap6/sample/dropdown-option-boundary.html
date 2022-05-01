@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ドロップダウン</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">フォームとボタンのコンポーネント：ドロップダウン</h1>
+<h2 class="text-center mb-5">ドロップダウンメニューのオーバーフローを制約する境界を設定する</h2>
+<div class="container">
+  <div class="bg-info text-center" style="width:250px;height:250px;overflow:scroll;">
+    <br><br><br>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-boundary="scrollParent">ドロップダウンボタン</button>
+      <ul class="dropdown-menu">
+        <li><a href="#" class="dropdown-item">スクロールウィンドウ幅で制約されるドロップダウンメニュー</a></li>
+        <li><a href="#" class="dropdown-item">スクロールウィンドウ幅で制約されるドロップダウンメニュー</a></li>
+        <li><a href="#" class="dropdown-item">スクロールウィンドウ幅で制約されるドロップダウンメニュー</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

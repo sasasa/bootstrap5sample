@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>カード</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：カード</h1>
+<h2 class="text-center">カードのスタイルを変更する</h2>
+<div class="container">
+  <h3 class="mb-4">カードの背景色を除去する</h3>
+  <div class="card mb-3" style="max-width: 25rem;">
+    <!-- ヘッダーの背景色 -->
+    <div class="card-header">ヘッダー初期設定の背景色</div>
+    <div class="card-body">
+      <h4 class="card-title">カードの見出し</h4>
+      <p class="card-text">カードの内容文が入ります。</p>
+    </div>
+    <!-- フッターの背景色 -->
+    <div class="card-footer">フッター初期設定の背景色</div>
+  </div>
+
+  <div class="card mb-3" style="max-width: 25rem;">
+    <!-- ヘッダー背景色の除去：bg-transparent -->
+    <div class="card-header bg-transparent">ヘッダー背景色の除去：bg-transparent</div>
+    <div class="card-body">
+      <h4 class="card-title">カードの見出し</h4>
+      <p class="card-text">カードの内容文が入ります。</p>
+    </div>
+    <!-- フッター背景色の除去：bg-transparent -->
+    <div class="card-footer bg-transparent">フッター背景色の除去：bg-transparent</div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

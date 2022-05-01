@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>JavaScriptを利用したコンポーネント：折り畳み</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+  <h1 class="text-center mb-5">JavaScriptを利用したコンポーネント：折り畳み</h1>
+  <h2 class="text-center">parentを指定</h2>
+  <div id="sample">
+    <div class="container">
+      <p>
+        <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent01" role="button" aria-expanded="false" aria-controls="collapseContent01">ボタン1</a>
+      </p>
+      <div class="collapse" id="collapseContent01" data-bs-parent="#sample">
+        <div class="card card-body">
+          コンテンツ1
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <p>
+        <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent02" role="button" aria-expanded="false" aria-controls="collapseContent02">ボタン2</a>
+      </p>
+      <div class="collapse" id="collapseContent02" data-bs-parent="#sample">
+        <div class="card card-body">
+          コンテンツ2
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <p>
+        <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent03" role="button" aria-expanded="false" aria-controls="collapseContent03">ボタン3</a>
+      </p>
+      <div class="collapse" id="collapseContent03" data-bs-parent="#sample">
+        <div class="card card-body">
+          コンテンツ3
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

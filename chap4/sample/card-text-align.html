@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>カード</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：カード</h1>
+<h2 class="text-center mb-4">カードのテキストを整列する</h2>
+<div class="container">
+  <!-- 標準（左揃え） -->
+  <div class="card" style="max-width: 25rem;">
+    <div class="card-body">
+      <h4 class="card-title">標準（左揃え）</h4>
+      <p class="card-text">カードの内容文が入ります。</p>
+      <a href="#" class="btn btn-primary">ボタン</a>
+    </div>
+  </div>
+  <!-- 中央揃え：text-center -->
+  <div class="card text-center" style="max-width: 25rem;">
+    <div class="card-body">
+      <h4 class="card-title">中央揃え：text-center</h4>
+      <p class="card-text">カードの内容文が入ります。</p>
+      <a href="#" class="btn btn-primary">ボタン</a>
+    </div>
+  </div>
+  <!-- 右揃え：text-end -->
+  <div class="card text-end" style="max-width: 25rem;">
+    <div class="card-body">
+      <h4 class="card-title">右揃え：text-end</h4>
+      <p class="card-text">カードの内容文が入ります。</p>
+      <a href="#" class="btn btn-primary">ボタン</a>
+    </div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

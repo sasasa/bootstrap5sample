@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>JavaScriptを利用したコンポーネント：モーダル</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+  <h1 class="text-center mb-5">JavaScriptを利用したコンポーネント：モーダル</h1>
+  <h2 class="text-center mb-4">モーダルの切り替え</h2>
+  <div class="container">
+    <!-- 開始ボタン -->
+    <div class="text-center">
+      <a class="btn btn-primary" data-bs-toggle="modal" href="#modal1" role="button">最初のモーダルを開く</a>
+    </div>
+    <!-- 最初のモーダル -->
+    <div class="modal fade" id="modal1" aria-hidden="true" aria-labelledby="modalLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">モーダルその1</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+          </div>
+          <div class="modal-body">
+            モーダルその1の本文が入ります。
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal">モーダルその2を開く</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 次のモーダル -->
+    <div class="modal fade" id="modal2" aria-hidden="true" aria-labelledby="modalLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel2">モーダルその2</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+          </div>
+          <div class="modal-body">
+            モーダルその2の本文が入ります。
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#modal1" data-bs-toggle="modal" data-bs-dismiss="modal">モーダルその1に戻る</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ユーティリティ</title>
+<style>
+/* 本文に関連のないスタイル */
+.position-relative > div {
+  width: 50px;
+  height: 50px;
+  background-color: #444;
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<h1 class="my-5 text-center">Positionユーティリティ</h1>
+<h2 class="my-5 text-center">配置位置に要素の中心がくるようにするクラス</h2>
+<div class="container">
+  <div class="position-relative w-auto bg-info" style="height: 400px;">
+    <div class="position-absolute top-0 start-0 translate-middle">1</div>
+    <div class="position-absolute top-0 start-50 translate-middle">2</div>
+    <div class="position-absolute top-0 start-100 translate-middle">3</div>
+    <div class="position-absolute top-50 start-0 translate-middle">4</div>
+    <div class="position-absolute top-50 start-50 translate-middle">5</div>
+    <div class="position-absolute top-50 start-100 translate-middle">6</div>
+    <div class="position-absolute top-100 start-0 translate-middle">7</div>
+    <div class="position-absolute top-100 start-50 translate-middle">8</div>
+    <div class="position-absolute top-100 start-100 translate-middle">9</div>
+  </div>    
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

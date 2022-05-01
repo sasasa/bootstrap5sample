@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>入力グループ</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center my-5">コンポーネント：入力グループ</h1>
+<h2 class="text-center my-5">スプリットボタン付きアドオン</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" class="form-control" aria-label="スプリットボタン付テキスト入力欄">
+        <button type="button" class="btn btn-secondary">アクション</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="visually-hidden">ドロップダウン切替</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">リンク1</a>
+          <a class="dropdown-item" href="#">リンク2</a>
+          <a class="dropdown-item" href="#">リンク3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

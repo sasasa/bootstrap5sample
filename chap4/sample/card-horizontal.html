@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>カード</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：カード</h1>
+<h2 class="text-center mb-4">カードを水平にする</h2>
+<div class="container">
+  <!-- カードの枠：card -->
+  <div class="card mb-3" style="max-width: 540px;">
+    <!-- ガターを削除 -->
+    <div class="row g-0">
+      <!-- mdブレイクポイントで水平に -->
+      <div class="col-md-4">
+        <!-- カード画像 -->
+        <img src="https://via.placeholder.com/180x180.png&text=img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <!-- カードの本文 -->
+        <div class="card-body">
+          <h5 class="card-title">カードの見出し</h5>
+          <p class="card-text">カードの内容文が入ります。</p>
+          <p class="card-text"><small class="text-muted">3分前に更新</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

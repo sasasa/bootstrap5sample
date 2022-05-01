@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>JavaScriptを利用したコンポーネント：オフキャンバス</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+  <h1 class="text-center mb-5">JavaScriptを利用したコンポーネント：オフキャンバス</h1>
+  <h2 class="text-center">オフキャンバスの基本的な使用例</h2>
+  <div class="container">
+    <!-- 切り替えボタン -->
+    <button type="button" class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#exampleOffcanvas">
+      切り替えボタン
+    </button>
+    <!-- オフキャンバス -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="exampleOffcanvas" aria-labelledby="exampleOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="exampleOffcanvasLabel">オフキャンバス</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          オフキャンバスの本文が入ります。いろんなコントロールを配置することができます。
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+            ドロップダウン
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">アクション1</a></li>
+            <li><a class="dropdown-item" href="#">アクション2</a></li>
+            <li><a class="dropdown-item" href="#">アクション3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

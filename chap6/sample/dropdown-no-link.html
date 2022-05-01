@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ドロップダウン</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">フォームとボタンのコンポーネント：ドロップダウン</h1>
+<h2 class="text-center mb-4">ドロップダウンにリンクなしのメニュー項目を追加する</h2>
+<div class="container">
+  <!-- ドロップダウン -->
+  <div class="dropdown">
+    <!-- 切り替えボタン -->
+     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      ドロップダウン
+      </button>
+    <!-- ドロップダウンメニュー -->
+    <ul class="dropdown-menu">
+      <li><span class="dropdown-item-text">非リンクテキスト</span></li>
+      <li><a class="dropdown-item" href="#">メニュー1</a></li>
+      <li><a class="dropdown-item" href="#">メニュー2</a></li>
+      <li><a class="dropdown-item" href="#">メニュー3</a></li>
+    </ul>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

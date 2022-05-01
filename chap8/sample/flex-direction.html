@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ユーティリティ</title>
+<style>
+/* 本文に関連のないスタイル */
+.d-flex {
+  background-color: rgba(255,0,0,.1);
+  margin-bottom: 2rem;
+}
+.d-flex > div {
+  background-color: #eee;
+  padding: .5em;
+  border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<h1 class="my-5 text-center">Flexユーティリティ</h1>
+<h2 class="my-5 text-center">flexコンテナの主軸方向を設定するクラス</h2>
+<div class="container">
+  <h3>左から右（flex-row）</h3>
+  <div class="d-flex flex-row">
+    <div>flexアイテム01</div>
+    <div>flexアイテム02</div>
+    <div>flexアイテム03</div>
+  </div>
+  <h3>右から左（flex-row-reverse）</h3>
+  <div class="d-flex flex-row-reverse">
+    <div>flexアイテム01</div>
+    <div>flexアイテム02</div>
+    <div>flexアイテム03</div>
+  </div>
+  <h3>上から下（flex-column）</h3>
+  <div class="d-flex flex-column">
+    <div>flexアイテム01</div>
+    <div>flexアイテム02</div>
+    <div>flexアイテム03</div>
+  </div>
+  <h3>下から上（flex-column-reverse）</h3>
+  <div class="d-flex flex-column-reverse">
+    <div>flexアイテム01</div>
+    <div>flexアイテム02</div>
+    <div>flexアイテム03</div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

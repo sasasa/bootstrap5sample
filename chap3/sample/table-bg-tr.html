@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>テーブル</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">基本的なスタイリング：テーブル</h1>
+<h2 class="text-center mb-4">背景色用のクラス</h2>
+<div class="container">
+  <h3 class="mb-4">テーブル行</h3>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">背景色用のクラス</th>
+        <th scope="col">見出しセル</th>
+        <th scope="col">見出しセル</th>
+        <th scope="col">見出しセル</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 背景色：なし -->
+      <tr>
+        <th scope="row">なし（標準）</th>
+        <td>データセル</td>
+        <td>データセル</td>
+        <td>データセル</td>
+      </tr>
+      <!-- 背景色：Primary -->
+      <tr class="table-primary">
+        <th scope="row">table-primary</th>
+        <td>データセル</td>
+        <td>データセル</td>
+        <td>データセル</td>
+      </tr>
+      <!-- 背景色：Secondary -->
+      <tr class="table-secondary">
+        <th scope="row">table-secondary</th>
+        <td>データセル</td>
+        <td>データセル</td>
+        <td>データセル</td>
+      </tr>
+      <!-- 背景色：Success -->
+      <tr class="table-success">
+        <th scope="row">table-success</th>
+        <td>データセル</td>
+        <td>データセル</td>
+        <td>データセル</td>
+      </tr>
+      <!-- 背景色：Danger -->
+      <tr class="table-danger">
+        <th scope="row">table-danger</th>
+        <td>データセル</td>
+        <td>データセル</td>
+        <td>データセル</td>
+      </tr>
+      <!-- 背景色：Warning -->
+      <tr class="table-warning">
+        <th scope="row">table-warning</th>
+        <td>データセル</td>
+        <td>データセル</td>
+        <td>データセル</td>
+      </tr>
+      <!-- 背景色：Info -->
+      <tr class="table-info">
+        <th scope="row">table-info</th>
+        <td>データセル</td>
+        <td>データセル</td>
+        <td>データセル</td>
+      </tr>
+      <!-- 背景色：Light -->
+      <tr class="table-light">
+        <th scope="row">table-light</th>
+        <td>データセル</td>
+        <td>データセル</td>
+        <td>データセル</td>
+      </tr>
+      <!-- 背景色：Dark -->
+      <tr class="table-dark">
+        <th scope="row">table-dark</th>
+        <td>データセル</td>
+        <td>データセル</td>
+        <td>データセル</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

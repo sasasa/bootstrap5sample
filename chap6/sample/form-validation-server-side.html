@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>フォーム</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：フォーム</h1>
+<h2 class="text-center">サーバー側で入力検証を行う場合のフィードバック例</h2>
+<div class="container">
+  <form>
+    <div class="row g-2">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer01">姓</label>
+        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="山田" required> </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationServer02">名</label>
+        <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="太郎" required> </div>
+    </div>
+    <div class="row g-2">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer03">市町村</label>
+        <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="市町村名を入力" required>
+        <div class="invalid-feedback">
+          市町村名を入力してください
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationServer04">都道府県</label>
+        <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="都道府県名を入力" required>
+        <div class="invalid-feedback">
+          都道府県名を入力してください
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationServer05">郵便番号</label>
+        <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="郵便番号を入力" required>
+        <div class="invalid-feedback">
+          郵便番号を入力してください
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">送信する</button>
+  </form>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

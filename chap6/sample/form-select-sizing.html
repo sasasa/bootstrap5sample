@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>フォーム</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：フォーム</h1>
+<h2 class="text-center mb-4">プルダウンメニューのサイズを変更する</h2>
+<div class="container">
+ <h3>大サイズのプルダウンメニュー</h3>
+  <form>
+    <select class="form-select form-select-lg">
+      <option selected>選択してください</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+  </form>
+</div>
+<div class="container">
+ <h3>標準サイズのプルダウンメニュー</h3>
+  <form>
+    <select class="form-select">
+      <option selected>選択してください</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+  </form>
+</div>
+<div class="container">
+ <h3>小サイズのプルダウンメニュー</h3>
+  <form>
+    <select class="form-select form-select-sm">
+      <option selected>選択してください</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+  </form>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

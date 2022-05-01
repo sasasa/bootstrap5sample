@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>入力グループ</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center my-5">コンポーネント：入力グループ</h1>
+<h2 class="text-center my-5">アドオンをチェックボックスやラジオボタンにする</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <!-- チェックボックス付きテキスト入力欄 -->
+      <div class="input-group mb-3">
+        <div class="input-group-text">
+          <input type="checkbox" aria-label="次のテキスト入力用のチェックボックス">
+        </div>
+        <input type="text" class="form-control" aria-label="チェックボックス付テキスト入力欄">
+      </div>
+      <!-- ラジオボタン付きテキスト入力欄 -->
+      <div class="input-group">
+        <div class="input-group-text">
+          <input type="radio" aria-label="次のテキスト入力用のラジオボタン">
+        </div>
+        <input type="text" class="form-control" aria-label="ラジオボタン付テキスト入力欄">
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

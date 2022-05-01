@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>カード</title>
+<style>
+/* 本文に関連のないスタイル */
+body {
+  padding-top: 2rem;
+}
+.container {
+  margin-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">コンポーネント：カード</h1>
+<h2 class="text-center">カード内に含めることができるコンテンツ</h2>
+<div class="container">
+  <h3 class="mb-4">カードに画像を配置する</h3>
+  <!-- 画像：上部 -->
+  <div class="card mb-3" style="max-width: 25rem;">
+    <!-- カード上部に画像を配置：card-img-top -->
+    <img class="card-img-top" src="https://via.placeholder.com/318x180.png&text=.card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">カードの内容文が入ります。</p>
+    </div>
+  </div>
+  <!-- 画像：下部 -->
+  <div class="card" style="max-width: 25rem;">
+    <div class="card-body">
+      <p class="card-text">カードの内容文が入ります。</p>
+    </div>
+    <!-- カード下部に画像を配置：card-img-bottom -->
+    <img class="card-img-bottom" src="https://via.placeholder.com/318x180.png&text=.card-img-bottom" alt="..."> </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

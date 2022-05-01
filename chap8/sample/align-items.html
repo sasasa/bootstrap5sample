@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>ユーティリティ</title>
+<style>
+/* 本文に関連のないスタイル */
+.d-flex {
+  background-color: rgba(255,0,0,.1);
+  margin-bottom: 2rem;
+}
+.d-flex > div {
+  background-color: #eee;
+  padding: .5em;
+  border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<h1 class="my-5 text-center">Flexユーティリティ</h1>
+<h2 class="my-5 text-center">交差軸方向の整列をするクラス</h2>
+<div class="container">
+  <h3>align-items-stretch</h3>
+  <div class="d-flex align-items-stretch" style="height: 200px">
+    <div>flexアイテム01</div>
+    <div>flexアイテム02</div>
+    <div>flexアイテム03</div>
+  </div>
+  <h3>align-items-start</h3>
+  <div class="d-flex align-items-start" style="height: 200px">
+    <div>flexアイテム01</div>
+    <div>flexアイテム02</div>
+    <div>flexアイテム03</div>
+  </div>
+  <h3>align-items-end</h3>
+  <div class="d-flex align-items-end" style="height: 200px">
+    <div>flexアイテム01</div>
+    <div>flexアイテム02</div>
+    <div>flexアイテム03</div>
+  </div>
+  <h3>align-items-center</h3>
+  <div class="d-flex align-items-center" style="height: 200px">
+    <div>flexアイテム01</div>
+    <div>flexアイテム02</div>
+    <div>flexアイテム03</div>
+  </div>
+  <h3>align-items-baseline</h3>
+  <div class="d-flex align-items-baseline" style="height: 200px">
+    <div style="padding: 2rem">flexアイテム01 <br>（padding: 2rem）</div>
+    <div style="padding: 4rem">flexアイテム02 <br>（padding: 4rem）</div>
+    <div style="padding: 1rem">flexアイテム03 <br>（padding: 1rem）</div>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
